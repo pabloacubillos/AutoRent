@@ -64,4 +64,18 @@ public abstract class Vehiculo {
     }
 
     public  abstract double calcularCostoAlquiler(int dias);
+
+    @Override
+    public String toString() {
+        return "Vehiculo{" +
+                "empresa=" + empresa +
+                ", placa='" + placa + '\'' +
+                ", marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", anioFabricacion=" + anioFabricacion +
+                ", estadoVehiculo=" + estadoVehiculo +
+                ", TARIFA_BASE=" + TARIFA_BASE +
+                ", listaAlquileres=" + listaAlquileres +
+                '}';
+    }
 }

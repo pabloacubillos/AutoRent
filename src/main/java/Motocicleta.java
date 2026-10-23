@@ -19,4 +19,11 @@ public class Motocicleta extends Vehiculo{
         double costo = getTARIFA_BASE() * dias * 0.90;
         return costo;
     }
+
+    @Override
+    public String toString() {
+        return "Motocicleta{" +super.toString()+
+                "cilindraje=" + cilindraje +
+                '}';
+    }
 }

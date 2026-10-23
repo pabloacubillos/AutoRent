@@ -42,4 +42,15 @@ public class Cliente {
 
     public List<Alquiler> getListaAlquileres() {return listaAlquileres;}
     public void setListaAlquileres(List<Alquiler> listaAlquileres) {this.listaAlquileres = listaAlquileres;}
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "empresa=" + empresa +
+                ", nombre='" + nombre + '\'' +
+                ", correo='" + correo + '\'' +
+                ", documento='" + documento + '\'' +
+                ", listaAlquileres=" + listaAlquileres +
+                '}';
+    }
 }

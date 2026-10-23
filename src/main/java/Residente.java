@@ -13,4 +13,11 @@ public class Residente extends Cliente{
     public void setDireccionResidencia(String direccionResidencia) {
         this.direccionResidencia = direccionResidencia;
     }
+
+    @Override
+    public String toString() {
+        return "Residente{" + super.toString()+
+                "direccionResidencia='" + direccionResidencia + '\'' +
+                '}';
+    }
 }

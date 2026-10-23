@@ -38,4 +38,15 @@ public class Empresa {
 
     public List<Alquiler> getListaAlquileres() {return listaAlquileres;}
     public void setListaAlquileres(List<Alquiler> listaAlquileres) {this.listaAlquileres = listaAlquileres;}
+
+    @Override
+    public String toString() {
+        return "Empresa{" +
+                "nombre='" + nombre + '\'' +
+                ", ciudad='" + ciudad + '\'' +
+                ", listaClientes=" + listaClientes +
+                ", listaVehiculos=" + listaVehiculos +
+                ", listaAlquileres=" + listaAlquileres +
+                '}';
+    }
 }

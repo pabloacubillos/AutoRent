@@ -28,6 +28,31 @@ public class Aplicacion {
         Alquiler alquiler1 = new Alquiler("ALQ-001", LocalDate.of(2026, 10, 22), 5, empresa1, residente2, automovil1);
         Alquiler alquiler2 = new Alquiler("ALQ-002", LocalDate.of(2026, 10, 23), 3, empresa1, residente1, motocicleta1);
 
+
+        System.out.println("-----Consultar información-----");
+
+        System.out.println("---Clientes---");
+
+        System.out.println("Turistas: ");
+        System.out.println(turista1);
+        System.out.println(turusta2);
+
+        System.out.println("Residentes: ");
+        System.out.println(residente1);
+        System.out.println(residente2);
+
+        System.out.println("---Vehículos---");
+        System.out.println("Automóviles: ");
+        System.out.println(automovil1);
+        System.out.println("Motocicletás: ");
+        System.out.println(motocicleta1);
+        System.out.println("Camioneta: ");
+        System.out.println(camioneta1);
+
+
+
+
+
     }
 
 }

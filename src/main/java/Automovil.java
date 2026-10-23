@@ -18,4 +18,11 @@ public class Automovil extends Vehiculo{
         double costo = (getTARIFA_BASE() + 20000)*dias;
         return costo;
     }
+
+    @Override
+    public String toString() {
+        return "Automovil{" +super.toString()+
+                "numeroPuertas=" + numeroPuertas +
+                '}';
+    }
 }

@@ -19,4 +19,11 @@ public class Camioneta extends Vehiculo{
         double costo = (getTARIFA_BASE() + 50000) * dias;
         return costo;
     }
+
+    @Override
+    public String toString() {
+        return "Camioneta{" +super.toString()+
+                "capacidadCargaKG=" + capacidadCargaKG +
+                '}';
+    }
 }

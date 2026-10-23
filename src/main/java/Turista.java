@@ -14,4 +14,10 @@ public class Turista extends Cliente{
         this.visa = visa;
     }
 
+    @Override
+    public String toString() {
+        return "Turista{" +super.toString()+
+                "visa='" + visa + '\'' +
+                '}';
+    }
 }
