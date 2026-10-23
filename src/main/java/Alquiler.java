@@ -1,14 +1,21 @@
 import java.time.LocalDate;
+import java.util.List;
 
 public class Alquiler {
     private String codigo;
-   private LocalDate fecha;
+    private LocalDate fecha;
     private int dias;
+    private Empresa empresa;
+    private Cliente cliente;
+    private Vehiculo vehiculo;
 
-    public Alquiler(String codigo, LocalDate fecha, int dias) {
+    public Alquiler(String codigo, LocalDate fecha, int dias, Empresa empresa, Cliente cliente, Vehiculo vehiculo) {
         this.codigo = codigo;
         this.fecha = fecha;
         this.dias = dias;
+        this.empresa = empresa;
+        this.cliente = cliente;
+        this.vehiculo = vehiculo;
     }
 
     public String getCodigo() {
