@@ -42,6 +42,11 @@ public class Alquiler {
         this.dias = dias;
     }
 
+    public double calcularCostoTotal() {
+        double costoTotal = vehiculo.calcularCostoAlquiler(dias);
+        return costoTotal;
+    }
+
 
 
 }
