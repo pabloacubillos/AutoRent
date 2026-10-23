@@ -1,14 +1,19 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cliente {
     private Empresa empresa;
     private String nombre;
     private String correo;
     private String documento;
+    private List<Alquiler> listaAlquileres;
 
     public Cliente(String nombre, String correo, String documento, Empresa empresa) {
         this.nombre = nombre;
         this.correo = correo;
         this.documento = documento;
         this.empresa = empresa;
+        listaAlquileres = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -34,4 +39,7 @@ public class Cliente {
 
     public Empresa getEmpresa() {return empresa;}
     public void setEmpresa(Empresa empresa) {this.empresa = empresa;}
+
+    public List<Alquiler> getListaAlquileres() {return listaAlquileres;}
+    public void setListaAlquileres(List<Alquiler> listaAlquileres) {this.listaAlquileres = listaAlquileres;}
 }

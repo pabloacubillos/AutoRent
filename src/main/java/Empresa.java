@@ -6,12 +6,14 @@ public class Empresa {
     private String ciudad;
     private List<Cliente> listaClientes;
     private List<Vehiculo> listaVehiculos;
+    private List<Alquiler> listaAlquileres;
 
     public Empresa(String nombre, String ciudad) {
         this.nombre = nombre;
         this.ciudad = ciudad;
         listaClientes = new ArrayList<>();
         listaVehiculos = new ArrayList<>();
+        listaAlquileres = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -33,4 +35,7 @@ public class Empresa {
 
     public List<Vehiculo> getListaVehiculos() {return listaVehiculos;}
     public void setListaVehiculos(List<Vehiculo> listaVehiculos) {this.listaVehiculos = listaVehiculos;}
+
+    public List<Alquiler> getListaAlquileres() {return listaAlquileres;}
+    public void setListaAlquileres(List<Alquiler> listaAlquileres) {this.listaAlquileres = listaAlquileres;}
 }

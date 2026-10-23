@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class Vehiculo {
 
     private Empresa empresa;
@@ -7,6 +10,7 @@ public abstract class Vehiculo {
     private int anioFabricacion;
     private EstadoVehiculo estadoVehiculo;
     private final double TARIFA_BASE = 10000;
+    private List<Alquiler> listaAlquileres;
 
     public Vehiculo(String placa, String marca, String modelo, int anioFabricacion, EstadoVehiculo estadoVehiculo, Empresa empresa) {
         this.placa = placa;
@@ -15,6 +19,7 @@ public abstract class Vehiculo {
         this.anioFabricacion = anioFabricacion;
         this.estadoVehiculo = estadoVehiculo;
         this.empresa = empresa;
+        listaAlquileres = new ArrayList<>();
     }
 
     public String getPlaca() {
@@ -50,6 +55,9 @@ public abstract class Vehiculo {
 
     public EstadoVehiculo getEstadoVehiculo() {return estadoVehiculo;}
     public void setEstadoVehiculo(EstadoVehiculo estadoVehiculo) {this.estadoVehiculo = estadoVehiculo;}
+
+    public List<Alquiler> getListaAlquileres() {return listaAlquileres;}
+    public void setListaAlquileres(List<Alquiler> listaAlquileres) {this.listaAlquileres = listaAlquileres;}
 
     public double getTARIFA_BASE() {
         return TARIFA_BASE;
