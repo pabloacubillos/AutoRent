@@ -1,8 +1,8 @@
 public class Turista extends Cliente{
     private String visa;
 
-    public Turista(String nombre, String correo, String documento, String visa) {
-        super(nombre, correo, documento);
+    public Turista(String nombre, String correo, String documento, Empresa empresa, String visa) {
+        super(nombre, correo, documento, empresa);
         this.visa = visa;
     }
 

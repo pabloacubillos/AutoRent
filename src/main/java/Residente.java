@@ -1,8 +1,8 @@
 public class Residente extends Cliente{
     private String direccionResidencia;
 
-    public Residente(String nombre, String correo, String documento, String direccionResidencia) {
-        super(nombre, correo, documento);
+    public Residente(String nombre, String correo, String documento, Empresa empresa, String direccionResidencia) {
+        super(nombre, correo, documento, empresa);
         this.direccionResidencia = direccionResidencia;
     }
 
