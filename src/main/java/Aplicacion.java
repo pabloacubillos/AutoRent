@@ -44,10 +44,15 @@ public class Aplicacion {
         System.out.println("---Vehículos---");
         System.out.println("Automóviles: ");
         System.out.println(automovil1);
-        System.out.println("Motocicletás: ");
+        System.out.println("Motocicletas: ");
         System.out.println(motocicleta1);
         System.out.println("Camioneta: ");
         System.out.println(camioneta1);
+
+        System.out.println("---Calcular y mostrar el costo total de un alquiler---\n");
+
+        System.out.println("Costo total alquiler 1: $" + alquiler1.calcularCostoTotal()+ " "+alquiler1);
+        System.out.println("Costo total alquiler 2: $" + alquiler2.calcularCostoTotal()+" "+alquiler2);
 
 
 

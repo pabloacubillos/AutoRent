@@ -47,6 +47,15 @@ public class Alquiler {
         return costoTotal;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Alquiler{" +
+                "codigo='" + codigo + '\'' +
+                ", fecha=" + fecha +
+                ", dias=" + dias +
+                ", empresa=" + empresa +
+                ", cliente=" + cliente +
+                ", vehiculo=" + vehiculo +
+                '}';
+    }
 }
