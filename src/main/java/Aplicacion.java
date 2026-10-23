@@ -8,7 +8,7 @@ public class Aplicacion {
 
         Turista turista1 = new Turista("Juan", "juanito123@gmail.com", "1234", empresa1, "V-2024-001");
 
-        Turista turusta2 = new Turista("Pedro", "pedritotiktok@gmail.com", "2345", empresa1, "V-2024-002");
+        Turista turista2 = new Turista("Pedro", "pedritotiktok@gmail.com", "2345", empresa1, "V-2024-002");
 
         //Creacion 2 residentes
 
@@ -35,7 +35,7 @@ public class Aplicacion {
 
         System.out.println("Turistas: ");
         System.out.println(turista1);
-        System.out.println(turusta2);
+        System.out.println(turista2);
 
         System.out.println("Residentes: ");
         System.out.println(residente1);
